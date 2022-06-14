@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: simple-web
+  name: simple-web
+  namespace: nginx
+spec:
+  containers:
+  - image: yeasy/simple-web:latest
+    name: simple-web
+    ports:
+    - containerPort: 80
+      protocol: TCP

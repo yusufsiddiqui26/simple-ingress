@@ -8,8 +8,8 @@ metadata:
   namespace: nginx
 spec:
   containers:
-  - image: yeasy/simple-web:latest
-    name: simple-web
+  - image: nginx
+    name: nginx
     ports:
     - containerPort: 80
       protocol: TCP
